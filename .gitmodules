@@ -1,0 +1,3 @@
+[submodule "SwiftCommandWS"]
+	path = SwiftCommandWS
+	url = https://github.com/FCO/SwiftCommandWS.git

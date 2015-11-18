@@ -32,6 +32,27 @@
 			remoteGlobalIDString = ED4DC9A01BFC10F2006B3B69;
 			remoteInfo = TelllClient;
 		};
+		ED4DC9DC1BFC12E4006B3B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED4DC8D91BF2D21B006B3B69;
+			remoteInfo = SwiftCommandWS;
+		};
+		ED4DC9DE1BFC12E4006B3B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED4DC8E31BF2D21B006B3B69;
+			remoteInfo = SwiftCommandWSTests;
+		};
+		ED4DC9EE1BFC1DE3006B3B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4DC8D81BF2D21B006B3B69;
+			remoteInfo = SwiftCommandWS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +70,7 @@
 		ED4DC9C31BFC10F3006B3B69 /* TelllClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelllClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4DC9C71BFC10F3006B3B69 /* TelllClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelllClientUITests.swift; sourceTree = "<group>"; };
 		ED4DC9C91BFC10F3006B3B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCommandWS.xcodeproj; path = SwiftCommandWS/SwiftCommandWS.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +121,7 @@
 		ED4DC9A31BFC10F2006B3B69 /* TelllClient */ = {
 			isa = PBXGroup;
 			children = (
+				ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */,
 				ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */,
 				ED4DC9A61BFC10F2006B3B69 /* ViewController.swift */,
 				ED4DC9A81BFC10F2006B3B69 /* Main.storyboard */,
@@ -128,6 +151,15 @@
 			path = TelllClientUITests;
 			sourceTree = "<group>";
 		};
+		ED4DC9D61BFC12E3006B3B69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */,
+				ED4DC9DF1BFC12E4006B3B69 /* SwiftCommandWSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +174,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				ED4DC9EF1BFC1DE3006B3B69 /* PBXTargetDependency */,
 			);
 			name = TelllClient;
 			productName = TelllClient;
@@ -218,6 +251,12 @@
 			mainGroup = ED4DC9981BFC10F2006B3B69;
 			productRefGroup = ED4DC9A21BFC10F2006B3B69 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ED4DC9D61BFC12E3006B3B69 /* Products */;
+					ProjectRef = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ED4DC9A01BFC10F2006B3B69 /* TelllClient */,
@@ -226,6 +265,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftCommandWS.framework;
+			remoteRef = ED4DC9DC1BFC12E4006B3B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ED4DC9DF1BFC12E4006B3B69 /* SwiftCommandWSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftCommandWSTests.xctest;
+			remoteRef = ED4DC9DE1BFC12E4006B3B69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ED4DC99F1BFC10F2006B3B69 /* Resources */ = {
@@ -293,6 +349,11 @@
 			isa = PBXTargetDependency;
 			target = ED4DC9A01BFC10F2006B3B69 /* TelllClient */;
 			targetProxy = ED4DC9C41BFC10F3006B3B69 /* PBXContainerItemProxy */;
+		};
+		ED4DC9EF1BFC1DE3006B3B69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftCommandWS;
+			targetProxy = ED4DC9EE1BFC1DE3006B3B69 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -488,6 +549,7 @@
 				ED4DC9CE1BFC10F3006B3B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4DC9CF1BFC10F3006B3B69 /* Build configuration list for PBXNativeTarget "TelllClientTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +558,7 @@
 				ED4DC9D11BFC10F3006B3B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED4DC9D21BFC10F3006B3B69 /* Build configuration list for PBXNativeTarget "TelllClientUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +567,7 @@
 				ED4DC9D41BFC10F3006B3B69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
