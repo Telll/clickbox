@@ -16,6 +16,8 @@
 		ED4DC9BD1BFC10F3006B3B69 /* TelllClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9BC1BFC10F3006B3B69 /* TelllClientTests.swift */; };
 		ED4DC9C81BFC10F3006B3B69 /* TelllClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9C71BFC10F3006B3B69 /* TelllClientUITests.swift */; };
 		ED4DC9F71BFC226E006B3B69 /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */; };
+		ED4DC9F91BFC29FB006B3B69 /* SwiftCommandWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */; };
+		ED4DC9FB1BFC2A1A006B3B69 /* SwiftCommandWS.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		ED4DC9FA1BFC2A03006B3B69 /* Copy Framework */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED4DC9FB1BFC2A1A006B3B69 /* SwiftCommandWS.framework in Copy Framework */,
+			);
+			name = "Copy Framework";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		ED4DC9A11BFC10F2006B3B69 /* TelllClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelllClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4DC9F91BFC29FB006B3B69 /* SwiftCommandWS.framework in Frameworks */,
 				ED4DC9F71BFC226E006B3B69 /* EventEmitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +191,7 @@
 				ED4DC99D1BFC10F2006B3B69 /* Sources */,
 				ED4DC99E1BFC10F2006B3B69 /* Frameworks */,
 				ED4DC99F1BFC10F2006B3B69 /* Resources */,
+				ED4DC9FA1BFC2A03006B3B69 /* Copy Framework */,
 			);
 			buildRules = (
 			);
