@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftCommandWS
-import SwiftJSON
+import SwiftyJSON
 
 class ViewController: UIViewController {
     @IBOutlet weak var lblConnected: UILabel!
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        cws = CommandWS(url: NSURL(string: "ws://127.0.0.1:3000/ws")!)
+        cws = CommandWS(url: NSURL(string: "ws://52.3.72.192:3000/ws")!)
         cws?.on("open") {
             self.lblConnected.text = "connected"
             self.btnConnect.enabled = true
@@ -35,8 +35,14 @@ class ViewController: UIViewController {
 
     @IBAction func login() {
         lblConnected.text = ""
-        cws?.run("login", data: JSON(["api_key": "1234", "user_name": txtUser.text, "password": txtPassword.text])) {(json : JSON) in
-            self.lblConnected.text = "logged in: \(json["auth_key"].string)"
+        let json : JSON = ["api_key": "1234", "user_name": txtUser.text!, "password": txtPassword.text!, "model": "iPad"]
+        cws?.run("login", data: json) {cmd in
+            print("logged in!")
+            if let auth_key = cmd.data!["auth_key"].string {
+                self.lblConnected.text = "logged in: \(auth_key)"
+            } else {
+                self.lblConnected.text = "Wrong login"
+            }
         }
     }
 
