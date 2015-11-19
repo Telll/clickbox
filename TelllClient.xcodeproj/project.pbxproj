@@ -16,8 +16,6 @@
 		ED4DC9BD1BFC10F3006B3B69 /* TelllClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9BC1BFC10F3006B3B69 /* TelllClientTests.swift */; };
 		ED4DC9C81BFC10F3006B3B69 /* TelllClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9C71BFC10F3006B3B69 /* TelllClientUITests.swift */; };
 		ED4DC9F71BFC226E006B3B69 /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */; };
-		ED4DC9F91BFC29FB006B3B69 /* SwiftCommandWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */; };
-		ED4DC9FB1BFC2A1A006B3B69 /* SwiftCommandWS.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED4DCA041BFD6DA3006B3B69 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */; };
 		ED4DCA051BFD6DC6006B3B69 /* SwiftyJSON.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -37,26 +35,19 @@
 			remoteGlobalIDString = ED4DC9A01BFC10F2006B3B69;
 			remoteInfo = TelllClient;
 		};
-		ED4DC9DC1BFC12E4006B3B69 /* PBXContainerItemProxy */ = {
+		ED4DCA0F1BFD7A95006B3B69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
+			containerPortal = ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = ED4DC8D91BF2D21B006B3B69;
 			remoteInfo = SwiftCommandWS;
 		};
-		ED4DC9DE1BFC12E4006B3B69 /* PBXContainerItemProxy */ = {
+		ED4DCA111BFD7A95006B3B69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
+			containerPortal = ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = ED4DC8E31BF2D21B006B3B69;
 			remoteInfo = SwiftCommandWSTests;
-		};
-		ED4DC9EE1BFC1DE3006B3B69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = ED4DC8D81BF2D21B006B3B69;
-			remoteInfo = SwiftCommandWS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -68,7 +59,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				ED4DCA051BFD6DC6006B3B69 /* SwiftyJSON.framework in Copy Framework */,
-				ED4DC9FB1BFC2A1A006B3B69 /* SwiftCommandWS.framework in Copy Framework */,
 			);
 			name = "Copy Framework";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,9 +80,9 @@
 		ED4DC9C31BFC10F3006B3B69 /* TelllClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelllClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4DC9C71BFC10F3006B3B69 /* TelllClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelllClientUITests.swift; sourceTree = "<group>"; };
 		ED4DC9C91BFC10F3006B3B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCommandWS.xcodeproj; path = SwiftCommandWS/SwiftCommandWS.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventEmitter.framework; path = "SwiftCommandWS/SwiftEventEmitter/build/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<group>"; };
 		ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCommandWS.xcodeproj; path = SwiftCommandWS/SwiftCommandWS.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +91,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED4DCA041BFD6DA3006B3B69 /* SwiftyJSON.framework in Frameworks */,
-				ED4DC9F91BFC29FB006B3B69 /* SwiftCommandWS.framework in Frameworks */,
 				ED4DC9F71BFC226E006B3B69 /* EventEmitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +137,7 @@
 		ED4DC9A31BFC10F2006B3B69 /* TelllClient */ = {
 			isa = PBXGroup;
 			children = (
-				ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */,
+				ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */,
 				ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */,
 				ED4DC9A61BFC10F2006B3B69 /* ViewController.swift */,
 				ED4DC9A81BFC10F2006B3B69 /* Main.storyboard */,
@@ -178,11 +167,11 @@
 			path = TelllClientUITests;
 			sourceTree = "<group>";
 		};
-		ED4DC9D61BFC12E3006B3B69 /* Products */ = {
+		ED4DCA091BFD7A95006B3B69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */,
-				ED4DC9DF1BFC12E4006B3B69 /* SwiftCommandWSTests.xctest */,
+				ED4DCA101BFD7A95006B3B69 /* SwiftCommandWS.framework */,
+				ED4DCA121BFD7A95006B3B69 /* SwiftCommandWSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,7 +191,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				ED4DC9EF1BFC1DE3006B3B69 /* PBXTargetDependency */,
 			);
 			name = TelllClient;
 			productName = TelllClient;
@@ -282,8 +270,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = ED4DC9D61BFC12E3006B3B69 /* Products */;
-					ProjectRef = ED4DC9D51BFC12E3006B3B69 /* SwiftCommandWS.xcodeproj */;
+					ProductGroup = ED4DCA091BFD7A95006B3B69 /* Products */;
+					ProjectRef = ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -296,18 +284,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		ED4DC9DD1BFC12E4006B3B69 /* SwiftCommandWS.framework */ = {
+		ED4DCA101BFD7A95006B3B69 /* SwiftCommandWS.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SwiftCommandWS.framework;
-			remoteRef = ED4DC9DC1BFC12E4006B3B69 /* PBXContainerItemProxy */;
+			remoteRef = ED4DCA0F1BFD7A95006B3B69 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		ED4DC9DF1BFC12E4006B3B69 /* SwiftCommandWSTests.xctest */ = {
+		ED4DCA121BFD7A95006B3B69 /* SwiftCommandWSTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SwiftCommandWSTests.xctest;
-			remoteRef = ED4DC9DE1BFC12E4006B3B69 /* PBXContainerItemProxy */;
+			remoteRef = ED4DCA111BFD7A95006B3B69 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -378,11 +366,6 @@
 			isa = PBXTargetDependency;
 			target = ED4DC9A01BFC10F2006B3B69 /* TelllClient */;
 			targetProxy = ED4DC9C41BFC10F3006B3B69 /* PBXContainerItemProxy */;
-		};
-		ED4DC9EF1BFC1DE3006B3B69 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftCommandWS;
-			targetProxy = ED4DC9EE1BFC1DE3006B3B69 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
