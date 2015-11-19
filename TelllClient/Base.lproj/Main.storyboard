@@ -62,6 +62,9 @@
                                 <rect key="frame" x="271" y="285" width="59" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Connect"/>
+                                <connections>
+                                    <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgL-ZB-Gp3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -82,6 +85,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnConnect" destination="lRM-LS-2hY" id="ynJ-Qm-XO5"/>
                         <outlet property="lblConnected" destination="32E-dK-Fy6" id="YAf-qh-j3J"/>
                         <outlet property="txtPassword" destination="g4P-a4-5Vp" id="ovf-Ed-1Wr"/>
                         <outlet property="txtUser" destination="Ytt-Hk-G1Y" id="F0s-5w-Zme"/>
