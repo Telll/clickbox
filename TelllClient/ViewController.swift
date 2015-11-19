@@ -35,8 +35,8 @@ class ViewController: UIViewController {
 
     @IBAction func login() {
         lblConnected.text = ""
-        cws?.run("login", data: JSON()) {
-            self.lblConnected.text = ""
+        cws?.run("login", data: JSON(["api_key": "1234", "user_name": txtUser.text, "password": txtPassword.text])) {(json : JSON) in
+            self.lblConnected.text = "logged in: \(json["auth_key"].string)"
         }
     }
 
