@@ -18,6 +18,14 @@
 		ED4DC9F71BFC226E006B3B69 /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */; };
 		ED4DCA041BFD6DA3006B3B69 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */; };
 		ED4DCA051BFD6DC6006B3B69 /* SwiftyJSON.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED4DCA131BFDED6A006B3B69 /* SwiftCommandWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DCA101BFD7A95006B3B69 /* SwiftCommandWS.framework */; };
+		ED4DCA141BFDED80006B3B69 /* SwiftCommandWS.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DCA101BFD7A95006B3B69 /* SwiftCommandWS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDF12B8A1BFEC00800C8CFAC /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; };
+		EDF12B8B1BFEC00800C8CFAC /* CryptoSwift.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDF12B8C1BFEC01100C8CFAC /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */; };
+		EDF12B8D1BFEC01100C8CFAC /* EventEmitter.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDF12B8F1BFEC2CF00C8CFAC /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */; };
+		EDF12B901BFEC2DD00C8CFAC /* Starscream.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +66,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EDF12B901BFEC2DD00C8CFAC /* Starscream.framework in Copy Framework */,
+				EDF12B8D1BFEC01100C8CFAC /* EventEmitter.framework in Copy Framework */,
+				ED4DCA141BFDED80006B3B69 /* SwiftCommandWS.framework in Copy Framework */,
 				ED4DCA051BFD6DC6006B3B69 /* SwiftyJSON.framework in Copy Framework */,
+				EDF12B8B1BFEC00800C8CFAC /* CryptoSwift.framework in Copy Framework */,
 			);
 			name = "Copy Framework";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +95,9 @@
 		ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventEmitter.framework; path = "SwiftCommandWS/SwiftEventEmitter/build/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<group>"; };
 		ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCommandWS.xcodeproj; path = SwiftCommandWS/SwiftCommandWS.xcodeproj; sourceTree = SOURCE_ROOT; };
+		EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EventEmitter.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<absolute>"; };
+		EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CryptoSwift.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<absolute>"; };
+		EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = SwiftCommandWS/Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +105,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4DCA131BFDED6A006B3B69 /* SwiftCommandWS.framework in Frameworks */,
+				EDF12B8F1BFEC2CF00C8CFAC /* Starscream.framework in Frameworks */,
 				ED4DCA041BFD6DA3006B3B69 /* SwiftyJSON.framework in Frameworks */,
+				EDF12B8C1BFEC01100C8CFAC /* EventEmitter.framework in Frameworks */,
+				EDF12B8A1BFEC00800C8CFAC /* CryptoSwift.framework in Frameworks */,
 				ED4DC9F71BFC226E006B3B69 /* EventEmitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,7 +134,10 @@
 		ED4DC9981BFC10F2006B3B69 = {
 			isa = PBXGroup;
 			children = (
+				EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */,
+				EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */,
 				ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */,
+				EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */,
 				ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */,
 				ED4DC9A31BFC10F2006B3B69 /* TelllClient */,
 				ED4DC9BB1BFC10F3006B3B69 /* TelllClientTests */,
@@ -478,10 +500,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftCommandWS/SwiftEventEmitter/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/SwiftCommandWS/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TelllClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -497,10 +521,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftCommandWS/SwiftEventEmitter/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/SwiftCommandWS/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TelllClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
