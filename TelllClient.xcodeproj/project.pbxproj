@@ -20,6 +20,7 @@
 		ED4DCA051BFD6DC6006B3B69 /* SwiftyJSON.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED4DCA131BFDED6A006B3B69 /* SwiftCommandWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4DCA101BFD7A95006B3B69 /* SwiftCommandWS.framework */; };
 		ED4DCA141BFDED80006B3B69 /* SwiftCommandWS.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DCA101BFD7A95006B3B69 /* SwiftCommandWS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED6092131C0540570068AABD /* TWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092121C0540560068AABD /* TWS.swift */; };
 		EDF12B8A1BFEC00800C8CFAC /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; };
 		EDF12B8B1BFEC00800C8CFAC /* CryptoSwift.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDF12B8C1BFEC01100C8CFAC /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */; };
@@ -102,6 +103,7 @@
 		ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventEmitter.framework; path = "SwiftCommandWS/SwiftEventEmitter/build/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<group>"; };
 		ED4DCA031BFD6DA3006B3B69 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCommandWS.xcodeproj; path = SwiftCommandWS/SwiftCommandWS.xcodeproj; sourceTree = SOURCE_ROOT; };
+		ED6092121C0540560068AABD /* TWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWS.swift; sourceTree = "<group>"; };
 		EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EventEmitter.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<absolute>"; };
 		EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CryptoSwift.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<absolute>"; };
 		EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = SwiftCommandWS/Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */,
 				ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */,
 				ED4DC9A61BFC10F2006B3B69 /* ViewController.swift */,
+				ED6092121C0540560068AABD /* TWS.swift */,
 				ED4DC9A81BFC10F2006B3B69 /* Main.storyboard */,
 				ED4DC9AE1BFC10F2006B3B69 /* Assets.xcassets */,
 				ED4DC9B01BFC10F2006B3B69 /* LaunchScreen.storyboard */,
@@ -364,6 +367,7 @@
 			files = (
 				ED4DC9A71BFC10F2006B3B69 /* ViewController.swift in Sources */,
 				ED4DC9A51BFC10F2006B3B69 /* AppDelegate.swift in Sources */,
+				ED6092131C0540570068AABD /* TWS.swift in Sources */,
 				ED4DC9AD1BFC10F2006B3B69 /* TelllClient.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
