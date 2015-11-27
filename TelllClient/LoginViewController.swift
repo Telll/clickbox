@@ -10,17 +10,11 @@ import UIKit
 import SwiftCommandWS
 import SwiftyJSON
 
-class ViewController: UIViewController {
+class LoginViewController : TWSViewBase {
     @IBOutlet weak var lblConnected: UILabel!
     @IBOutlet weak var txtUser: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnConnect: UIButton!
-    var auth_key    : String?
-    var tws         : TWS {
-        get {
-            return (UIApplication.sharedApplication().delegate as! AppDelegate).tws
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,10 +32,10 @@ class ViewController: UIViewController {
         }
         tws.on("login_ok") {(auth_key : String) in
             print("logged in!")
-            self.auth_key = auth_key
             self.lblConnected.text = "logged in:\n\(auth_key)"
             self.btnConnect.setTitle("logout", forState: .Normal)
             self.tws.movies()
+            self.showMovies()
         }
         tws.on("login_error") {
             self.lblConnected.text = "Wrong login"
@@ -52,12 +46,6 @@ class ViewController: UIViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        tws.disconnect()
-    }
-
     @IBAction func login() {
         if tws.loggedIn {
             tws.logout()
@@ -66,8 +54,5 @@ class ViewController: UIViewController {
         }
     }
 
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
 }
 

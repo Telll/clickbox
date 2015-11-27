@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED4DC9A51BFC10F2006B3B69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */; };
-		ED4DC9A71BFC10F2006B3B69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9A61BFC10F2006B3B69 /* ViewController.swift */; };
+		ED4DC9A71BFC10F2006B3B69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9A61BFC10F2006B3B69 /* LoginViewController.swift */; };
 		ED4DC9AA1BFC10F2006B3B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4DC9A81BFC10F2006B3B69 /* Main.storyboard */; };
 		ED4DC9AD1BFC10F2006B3B69 /* TelllClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED4DC9AB1BFC10F2006B3B69 /* TelllClient.xcdatamodeld */; };
 		ED4DC9AF1BFC10F2006B3B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4DC9AE1BFC10F2006B3B69 /* Assets.xcassets */; };
@@ -22,6 +22,8 @@
 		ED4DCA141BFDED80006B3B69 /* SwiftCommandWS.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = ED4DCA101BFD7A95006B3B69 /* SwiftCommandWS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED6092131C0540570068AABD /* TWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092121C0540560068AABD /* TWS.swift */; };
 		ED6092151C06A42B0068AABD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092141C06A42B0068AABD /* Movie.swift */; };
+		ED6092171C07D05F0068AABD /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092161C07D05F0068AABD /* MoviesViewController.swift */; };
+		ED6092191C07D11A0068AABD /* TWSViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092181C07D11A0068AABD /* TWSViewBase.swift */; };
 		EDF12B8A1BFEC00800C8CFAC /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; };
 		EDF12B8B1BFEC00800C8CFAC /* CryptoSwift.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDF12B8C1BFEC01100C8CFAC /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */; };
@@ -89,7 +91,7 @@
 /* Begin PBXFileReference section */
 		ED4DC9A11BFC10F2006B3B69 /* TelllClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelllClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED4DC9A61BFC10F2006B3B69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED4DC9A61BFC10F2006B3B69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED4DC9A91BFC10F2006B3B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4DC9AC1BFC10F2006B3B69 /* TelllClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TelllClient.xcdatamodel; sourceTree = "<group>"; };
 		ED4DC9AE1BFC10F2006B3B69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,8 @@
 		ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftCommandWS.xcodeproj; path = SwiftCommandWS/SwiftCommandWS.xcodeproj; sourceTree = SOURCE_ROOT; };
 		ED6092121C0540560068AABD /* TWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWS.swift; sourceTree = "<group>"; };
 		ED6092141C06A42B0068AABD /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		ED6092161C07D05F0068AABD /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		ED6092181C07D11A0068AABD /* TWSViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWSViewBase.swift; sourceTree = "<group>"; };
 		EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EventEmitter.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<absolute>"; };
 		EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CryptoSwift.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<absolute>"; };
 		EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = SwiftCommandWS/Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
@@ -172,9 +176,11 @@
 			children = (
 				ED4DCA081BFD7A95006B3B69 /* SwiftCommandWS.xcodeproj */,
 				ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */,
-				ED4DC9A61BFC10F2006B3B69 /* ViewController.swift */,
 				ED6092141C06A42B0068AABD /* Movie.swift */,
 				ED6092121C0540560068AABD /* TWS.swift */,
+				ED6092181C07D11A0068AABD /* TWSViewBase.swift */,
+				ED4DC9A61BFC10F2006B3B69 /* LoginViewController.swift */,
+				ED6092161C07D05F0068AABD /* MoviesViewController.swift */,
 				ED4DC9A81BFC10F2006B3B69 /* Main.storyboard */,
 				ED4DC9AE1BFC10F2006B3B69 /* Assets.xcassets */,
 				ED4DC9B01BFC10F2006B3B69 /* LaunchScreen.storyboard */,
@@ -368,11 +374,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4DC9A71BFC10F2006B3B69 /* ViewController.swift in Sources */,
+				ED4DC9A71BFC10F2006B3B69 /* LoginViewController.swift in Sources */,
 				ED4DC9A51BFC10F2006B3B69 /* AppDelegate.swift in Sources */,
 				ED6092131C0540570068AABD /* TWS.swift in Sources */,
 				ED4DC9AD1BFC10F2006B3B69 /* TelllClient.xcdatamodeld in Sources */,
 				ED6092151C06A42B0068AABD /* Movie.swift in Sources */,
+				ED6092171C07D05F0068AABD /* MoviesViewController.swift in Sources */,
+				ED6092191C07D11A0068AABD /* TWSViewBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
