@@ -27,15 +27,21 @@ class TWSViewBase : UIViewController {
         view.endEditing(true)
     }
     
-    func showMovies() {
-        let moviesViewController : MoviesViewController = MoviesViewController()
-        
-        self.presentViewController(moviesViewController, animated: true, completion: nil)
-    }
-    
-    func showLogin() {
-        let loginControllerView : LoginViewController = LoginViewController()
-        
-        self.presentViewController(loginControllerView, animated: true, completion: nil)
-    }
+//    func showMoviesPage() {
+//        let moviesViewController : MoviesViewController = MoviesViewController()
+//        
+//        self.presentViewController(moviesViewController, animated: true, completion: nil)
+//    }
+//    
+//    func showLoginPage() {
+//        let loginControllerView : LoginViewController = LoginViewController()
+//        
+//        self.presentViewController(loginControllerView, animated: true, completion: nil)
+//    }
+//    
+//    func switchScreen() {
+//        let mainStoryboard = UIStoryboard(name: "Storyboard", bundle: NSBundle.mainBundle())
+//        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("vcMainLogin") as UIViewController
+//        self.presentViewController(vc, animated: true, completion: nil)
+//    }
 }

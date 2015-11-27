@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login - Telll-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="TelllClient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login - Telll" id="BYZ-38-t0r" customClass="LoginViewController" customModule="TelllClient" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -69,6 +69,14 @@
                                     <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgL-ZB-Gp3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGa-Ea-UB7">
+                                <rect key="frame" x="276" y="323" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Movies"/>
+                                <connections>
+                                    <segue destination="FbH-Fp-26z" kind="show" id="6lh-q1-FWn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -80,6 +88,8 @@
                             <constraint firstItem="lRM-LS-2hY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pgx-We-BvI"/>
                             <constraint firstItem="g4P-a4-5Vp" firstAttribute="top" secondItem="Mkl-ZY-2gI" secondAttribute="bottom" constant="8" id="XwU-xd-QPn"/>
                             <constraint firstItem="Mkl-ZY-2gI" firstAttribute="top" secondItem="Ytt-Hk-G1Y" secondAttribute="bottom" constant="8" id="Y9u-C5-1kB"/>
+                            <constraint firstItem="mGa-Ea-UB7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z2Z-ih-twM"/>
+                            <constraint firstItem="mGa-Ea-UB7" firstAttribute="top" secondItem="lRM-LS-2hY" secondAttribute="bottom" constant="8" id="kZL-09-1BN"/>
                             <constraint firstItem="eMw-XA-oQy" firstAttribute="top" secondItem="32E-dK-Fy6" secondAttribute="bottom" constant="8" id="lzK-8b-SgD"/>
                             <constraint firstItem="Ytt-Hk-G1Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mDQ-2Z-ada"/>
                             <constraint firstItem="g4P-a4-5Vp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u8e-Gf-a3q"/>
@@ -89,6 +99,7 @@
                     </view>
                     <connections>
                         <outlet property="btnConnect" destination="lRM-LS-2hY" id="ynJ-Qm-XO5"/>
+                        <outlet property="btnMovies" destination="mGa-Ea-UB7" id="bgB-Xn-Gf4"/>
                         <outlet property="lblConnected" destination="32E-dK-Fy6" id="YAf-qh-j3J"/>
                         <outlet property="txtPassword" destination="g4P-a4-5Vp" id="ovf-Ed-1Wr"/>
                         <outlet property="txtUser" destination="Ytt-Hk-G1Y" id="F0s-5w-Zme"/>
@@ -98,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="508" y="201"/>
         </scene>
-        <!--Movies View Controller-->
+        <!--Movies - Telll-->
         <scene sceneID="6aJ-n9-neM">
             <objects>
-                <viewController id="FbH-Fp-26z" customClass="MoviesViewController" sceneMemberID="viewController">
+                <viewController title="Movies - Telll" id="FbH-Fp-26z" customClass="MoviesViewController" customModule="TelllClient" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eeV-Fx-zGb"/>
                         <viewControllerLayoutGuide type="bottom" id="12R-uF-bbo"/>

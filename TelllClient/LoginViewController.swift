@@ -15,6 +15,7 @@ class LoginViewController : TWSViewBase {
     @IBOutlet weak var txtUser: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnConnect: UIButton!
+    @IBOutlet weak var btnMovies: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,8 @@ class LoginViewController : TWSViewBase {
             self.lblConnected.text = "logged in:\n\(auth_key)"
             self.btnConnect.setTitle("logout", forState: .Normal)
             self.tws.movies()
-            self.showMovies()
+//            self.showMoviesPage()
+            self.btnMovies.enabled = true
         }
         tws.on("login_error") {
             self.lblConnected.text = "Wrong login"
