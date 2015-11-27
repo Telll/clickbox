@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login - Telll-->
@@ -121,8 +122,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmr-e4-3u9">
-                                <rect key="frame" x="262" y="55" width="59" height="21"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Tta-xS-yXm" customClass="I">
+                                <rect key="frame" x="20" y="66" width="560" height="514"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="huF-zZ-zAE">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movie" id="fJQ-pg-hRC">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="134"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="173" height="134"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="0.81202308307793269" blue="0.74672219868342793" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="customSize" width="173" height="134"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yhf-rr-IEW">
+                                <rect key="frame" x="273" y="28" width="55" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,8 +159,13 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xmr-e4-3u9" firstAttribute="centerX" secondItem="La1-WB-Zpl" secondAttribute="centerX" id="8wR-KG-FFp"/>
-                            <constraint firstItem="Xmr-e4-3u9" firstAttribute="top" secondItem="eeV-Fx-zGb" secondAttribute="bottom" constant="35" id="wHB-Ae-jk8"/>
+                            <constraint firstItem="Tta-xS-yXm" firstAttribute="top" secondItem="yhf-rr-IEW" secondAttribute="bottom" constant="17" id="3Me-21-a0f"/>
+                            <constraint firstItem="Tta-xS-yXm" firstAttribute="centerX" secondItem="La1-WB-Zpl" secondAttribute="centerX" id="Ije-Bj-qzW"/>
+                            <constraint firstItem="Tta-xS-yXm" firstAttribute="trailing" secondItem="La1-WB-Zpl" secondAttribute="trailingMargin" id="Vj6-b2-d2g"/>
+                            <constraint firstItem="yhf-rr-IEW" firstAttribute="centerX" secondItem="La1-WB-Zpl" secondAttribute="centerX" id="Y04-YE-Q72"/>
+                            <constraint firstItem="yhf-rr-IEW" firstAttribute="top" secondItem="eeV-Fx-zGb" secondAttribute="bottom" constant="8" id="dR5-Ok-7DA"/>
+                            <constraint firstItem="12R-uF-bbo" firstAttribute="top" secondItem="Tta-xS-yXm" secondAttribute="bottom" constant="20" id="gYK-kK-0WP"/>
+                            <constraint firstItem="Tta-xS-yXm" firstAttribute="leading" secondItem="La1-WB-Zpl" secondAttribute="leadingMargin" id="jfC-Uz-By6"/>
                         </constraints>
                     </view>
                 </viewController>
