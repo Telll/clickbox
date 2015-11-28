@@ -22,26 +22,12 @@ class TWSViewBase : UIViewController {
         tws.disconnect()
     }
     
-    
     func dismissKeyboard() {
         view.endEditing(true)
     }
     
-//    func showMoviesPage() {
-//        let moviesViewController : MoviesViewController = MoviesViewController()
-//        
-//        self.presentViewController(moviesViewController, animated: true, completion: nil)
-//    }
-//    
-//    func showLoginPage() {
-//        let loginControllerView : LoginViewController = LoginViewController()
-//        
-//        self.presentViewController(loginControllerView, animated: true, completion: nil)
-//    }
-//    
-//    func switchScreen() {
-//        let mainStoryboard = UIStoryboard(name: "Storyboard", bundle: NSBundle.mainBundle())
-//        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("vcMainLogin") as UIViewController
-//        self.presentViewController(vc, animated: true, completion: nil)
-//    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.nextField?.becomeFirstResponder()
+        return true
+    }
 }

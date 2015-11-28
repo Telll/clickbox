@@ -16,10 +16,11 @@ class MoviesViewController : TWSViewBase, UICollectionViewDelegate, UICollection
         super.viewWillAppear(animated)
         self.tws.movies()
 
-        self.tws.on("movies") {(movies : [Movie]) in
-            print(movies)
+        self.tws.on("movies_ok") {(movies : [Movie]) in
+            print("movies: \(movies)")
             self.movies = movies
             if let collection = self.collectionView {
+                print("reloadData")
                 collection.reloadData()
             }
         }
@@ -46,8 +47,9 @@ class MoviesViewController : TWSViewBase, UICollectionViewDelegate, UICollection
 
     //3
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! MovieCollectionViewCell
 //        cell.backgroundColor = UIColor.blackColor()
+        cell.populate(movies[indexPath.row])
         // Configure the cell
         return cell
     }

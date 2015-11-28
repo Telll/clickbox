@@ -27,6 +27,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="nextField" destination="g4P-a4-5Vp" id="SPe-Es-PHr"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g4P-a4-5Vp">
                                 <rect key="frame" x="252" y="220" width="97" height="30"/>
@@ -118,36 +121,51 @@
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="huF-zZ-zAE">
-                                    <size key="itemSize" width="130" height="170"/>
+                                    <size key="itemSize" width="120" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movie" id="fJQ-pg-hRC">
-                                        <rect key="frame" x="10" y="74" width="173" height="134"/>
+                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movie" id="fJQ-pg-hRC" customClass="MovieCollectionViewCell" customModule="TelllClient" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="74" width="170" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="173" height="134"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EA4-u5-OSl">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EA4-u5-OSl">
                                                     <rect key="frame" x="0.0" y="0.0" width="173" height="134"/>
                                                     <animations/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YmD-aK-9h3">
+                                                    <rect key="frame" x="8" y="132" width="154" height="22"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="moc-ch-jN0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <animations/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <animations/>
-                                        <color key="backgroundColor" red="1" green="0.81202308307793269" blue="0.74672219868342793" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="EA4-u5-OSl" firstAttribute="top" secondItem="fJQ-pg-hRC" secondAttribute="top" id="Wel-gR-EXI"/>
-                                            <constraint firstAttribute="trailing" secondItem="EA4-u5-OSl" secondAttribute="trailing" id="fgY-az-c1E"/>
-                                            <constraint firstAttribute="bottom" secondItem="EA4-u5-OSl" secondAttribute="bottom" id="rUv-w1-l15"/>
-                                            <constraint firstItem="EA4-u5-OSl" firstAttribute="leading" secondItem="fJQ-pg-hRC" secondAttribute="leading" id="tv2-gw-M1g"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="EA4-u5-OSl" secondAttribute="bottom" constant="12" id="1ER-Zw-udc"/>
+                                            <constraint firstAttribute="bottom" secondItem="YmD-aK-9h3" secondAttribute="bottom" id="21k-bV-smJ"/>
+                                            <constraint firstItem="YmD-aK-9h3" firstAttribute="trailing" secondItem="fJQ-pg-hRC" secondAttribute="trailingMargin" id="22c-kw-CoY"/>
+                                            <constraint firstItem="EA4-u5-OSl" firstAttribute="leading" secondItem="fJQ-pg-hRC" secondAttribute="leading" id="OFM-Mb-YJp"/>
+                                            <constraint firstItem="YmD-aK-9h3" firstAttribute="leading" secondItem="fJQ-pg-hRC" secondAttribute="leadingMargin" id="OZL-qK-ixQ"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="EA4-u5-OSl" secondAttribute="trailing" constant="-11" id="j0Y-Iy-ulh"/>
+                                            <constraint firstItem="EA4-u5-OSl" firstAttribute="top" secondItem="fJQ-pg-hRC" secondAttribute="top" id="x9d-Md-vgf"/>
                                         </constraints>
-                                        <size key="customSize" width="173" height="134"/>
+                                        <size key="customSize" width="170" height="154"/>
+                                        <connections>
+                                            <outlet property="image" destination="EA4-u5-OSl" id="uIR-61-xa4"/>
+                                            <outlet property="title" destination="YmD-aK-9h3" id="G9F-eT-KJm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -159,11 +177,10 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tta-xS-yXm" firstAttribute="leading" secondItem="La1-WB-Zpl" secondAttribute="leadingMargin" constant="-20" id="4ZJ-9O-zNE"/>
-                            <constraint firstItem="Tta-xS-yXm" firstAttribute="top" secondItem="La1-WB-Zpl" secondAttribute="topMargin" id="IhK-QS-dLN"/>
-                            <constraint firstItem="Tta-xS-yXm" firstAttribute="centerX" secondItem="La1-WB-Zpl" secondAttribute="centerX" id="Ije-Bj-qzW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Tta-xS-yXm" secondAttribute="trailing" constant="-20" id="ayB-O0-fb3"/>
-                            <constraint firstItem="12R-uF-bbo" firstAttribute="top" secondItem="Tta-xS-yXm" secondAttribute="bottom" id="m69-MN-QG7"/>
+                            <constraint firstItem="Tta-xS-yXm" firstAttribute="bottom" secondItem="12R-uF-bbo" secondAttribute="top" id="78l-jg-fid"/>
+                            <constraint firstAttribute="trailing" secondItem="Tta-xS-yXm" secondAttribute="trailing" id="IKz-jH-T7J"/>
+                            <constraint firstItem="Tta-xS-yXm" firstAttribute="leading" secondItem="La1-WB-Zpl" secondAttribute="leading" id="fMI-Ri-q8w"/>
+                            <constraint firstItem="Tta-xS-yXm" firstAttribute="top" secondItem="La1-WB-Zpl" secondAttribute="top" id="svL-yd-Rv1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -194,4 +211,7 @@
             <point key="canvasLocation" x="508" y="201"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="noimage.jpg" width="275" height="275"/>
+    </resources>
 </document>
