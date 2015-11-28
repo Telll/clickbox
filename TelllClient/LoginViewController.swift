@@ -1,4 +1,4 @@
-//
+
 //  ViewController.swift
 //  TelllClient
 //
@@ -35,8 +35,8 @@ class LoginViewController : TWSViewBase {
             print("logged in!")
             self.lblConnected.text = "logged in:\n\(auth_key)"
             self.btnConnect.setTitle("logout", forState: .Normal)
-//            self.showMoviesPage()
-            self.btnMovies.enabled = true
+//            self.btnMovies.enabled = true
+            self.performSegueWithIdentifier("login2movies", sender: self)
         }
         tws.on("login_error") {
             self.lblConnected.text = "Wrong login"
