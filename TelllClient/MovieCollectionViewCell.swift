@@ -15,7 +15,14 @@ class MovieCollectionViewCell: UICollectionViewCell {
     
     func populate(movie : Movie) {
         title.text = movie.title
-        let url = NSURL(string: "http://static.cineclick.com.br/sites/adm/uploads/banco_imagens/38/582x0_1391196580.jpg")
-        image.downloadedFrom(url: url!, contentMode: .ScaleAspectFit)
+        if let url = movie.image {
+            image.downloadedFrom(url: url, contentMode: .ScaleAspectFit)
+        }
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        let img = UIImage(named: "noimage.jpg")
+        image.image = img
     }
 }

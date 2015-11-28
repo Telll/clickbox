@@ -17,6 +17,7 @@ import SwiftyJSON
 "_" : "NYI"
 },
 "id" : "0",
+"image": "http://pugim.com.br/pudim.jpg"
 "media" : {
 "_" : "NYI"
 },
@@ -36,6 +37,7 @@ class Movie {
     var title       : String?
     var description : String?
     var url         : NSURL?
+    var image       : NSURL?
 
     init(origJson : JSON) {
         json        = origJson
@@ -47,6 +49,10 @@ class Movie {
         
         if let sUrl = origJson["url"].string {
             url = NSURL(string: sUrl)
+        }
+        
+        if let sImage = origJson["image"].string {
+            image = NSURL(string: sImage)
         }
     }
 }
