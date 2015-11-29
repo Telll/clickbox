@@ -12,6 +12,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
     var movie               : Movie = Movie(origJson: [])
+    let noimage                     = UIImage(named: "noimage.jpg")
     
     func populate(movie : Movie) {
         title.text = movie.title
@@ -22,7 +23,6 @@ class MovieCollectionViewCell: UICollectionViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        let img = UIImage(named: "noimage.jpg")
-        image.image = img
+        image.image = noimage
     }
 }

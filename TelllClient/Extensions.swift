@@ -22,14 +22,20 @@ extension UITextField {
 }
 
 extension UIImageView {
+    @nonobjc static var cache : [NSURL:UIImage] = [:]
     func downloadedFrom(url url:NSURL, contentMode mode: UIViewContentMode) {
         contentMode = mode
+        if let cached = UIImageView.cache[url] {
+            image = cached
+            return
+        }
         NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: { (data, _, error) -> Void in
             guard
                 let data = data where error == nil,
                 let image = UIImage(data: data)
                 else { return }
             dispatch_async(dispatch_get_main_queue()) { () -> Void in
+                UIImageView.cache[url] = image
                 self.image = image
             }
         }).resume()
