@@ -185,11 +185,31 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Tta-xS-yXm" id="MmG-sU-Bcj"/>
+                        <segue destination="SEF-EU-3Xf" kind="show" identifier="moviesList2player" id="VZ1-ci-rfV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m04-qM-LG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2042" y="201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GHB-M1-AVI">
+            <objects>
+                <viewController id="SEF-EU-3Xf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6V9-o0-Ybt"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Pl-gu-eDi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ma-1L-ixP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7L-pk-PNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2777" y="201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ynu-ar-dan">

@@ -26,7 +26,7 @@
 		ED6092191C07D11A0068AABD /* TWSViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092181C07D11A0068AABD /* TWSViewBase.swift */; };
 		ED60921D1C0A46F70068AABD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60921C1C0A46F70068AABD /* Extensions.swift */; };
 		ED6092211C0A52C70068AABD /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092201C0A52C70068AABD /* MovieCollectionViewCell.swift */; };
-		ED6092291C0A6DBB0068AABD /* noimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED6092281C0A6DBB0068AABD /* noimage.jpg */; };
+		ED60922D1C0A91360068AABD /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60922C1C0A91360068AABD /* VideoPlayerViewController.swift */; };
 		EDF12B8A1BFEC00800C8CFAC /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; };
 		EDF12B8B1BFEC00800C8CFAC /* CryptoSwift.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDF12B8C1BFEC01100C8CFAC /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */; };
@@ -115,7 +115,7 @@
 		ED6092181C07D11A0068AABD /* TWSViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWSViewBase.swift; sourceTree = "<group>"; };
 		ED60921C1C0A46F70068AABD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED6092201C0A52C70068AABD /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		ED6092281C0A6DBB0068AABD /* noimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noimage.jpg; sourceTree = "<group>"; };
+		ED60922C1C0A91360068AABD /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EventEmitter.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<absolute>"; };
 		EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CryptoSwift.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<absolute>"; };
 		EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = SwiftCommandWS/Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		ED4DC9981BFC10F2006B3B69 = {
 			isa = PBXGroup;
 			children = (
-				ED6092281C0A6DBB0068AABD /* noimage.jpg */,
+				ED60922C1C0A91360068AABD /* VideoPlayerViewController.swift */,
 				EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */,
 				EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */,
 				ED4DC9F61BFC226E006B3B69 /* EventEmitter.framework */,
@@ -358,7 +358,6 @@
 			files = (
 				ED4DC9B21BFC10F2006B3B69 /* LaunchScreen.storyboard in Resources */,
 				ED4DC9AF1BFC10F2006B3B69 /* Assets.xcassets in Resources */,
-				ED6092291C0A6DBB0068AABD /* noimage.jpg in Resources */,
 				ED4DC9AA1BFC10F2006B3B69 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +390,7 @@
 				ED4DC9AD1BFC10F2006B3B69 /* TelllClient.xcdatamodeld in Sources */,
 				ED6092151C06A42B0068AABD /* Movie.swift in Sources */,
 				ED6092211C0A52C70068AABD /* MovieCollectionViewCell.swift in Sources */,
+				ED60922D1C0A91360068AABD /* VideoPlayerViewController.swift in Sources */,
 				ED6092171C07D05F0068AABD /* MoviesViewController.swift in Sources */,
 				ED6092191C07D11A0068AABD /* TWSViewBase.swift in Sources */,
 			);
