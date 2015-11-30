@@ -36,7 +36,7 @@ class Movie {
     var author      : String?
     var title       : String?
     var description : String?
-    var url         : NSURL?
+    var url         : NSURL
     var image       : NSURL?
 
     init(origJson : JSON) {
@@ -48,7 +48,9 @@ class Movie {
         description = origJson["description"].string
         
         if let sUrl = origJson["url"].string {
-            url = NSURL(string: sUrl)
+            url = NSURL(string: sUrl)!
+        } else {
+            url = NSURL()
         }
         
         if let sImage = origJson["image"].string {

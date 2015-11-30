@@ -14,14 +14,16 @@ class MoviesViewController : TWSViewBase, UICollectionViewDelegate, UICollection
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.tws.movies()
+        if movies.count == 0 {
+            self.tws.movies()
 
-        self.tws.on("movies_ok") {(movies : [Movie]) in
-            print("movies: \(movies)")
-            self.movies = movies
-            if let collection = self.collectionView {
-                print("reloadData")
-                collection.reloadData()
+            self.tws.on("movies_ok") {(movies : [Movie]) in
+                print("movies: \(movies)")
+                self.movies = movies
+                if let collection = self.collectionView {
+                    print("reloadData")
+                    collection.reloadData()
+                }
             }
         }
     }
@@ -30,8 +32,8 @@ class MoviesViewController : TWSViewBase, UICollectionViewDelegate, UICollection
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        view.addGestureRecognizer(tap)
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+//        view.addGestureRecognizer(tap)
     }
     
 
@@ -51,6 +53,24 @@ class MoviesViewController : TWSViewBase, UICollectionViewDelegate, UICollection
 //        cell.backgroundColor = UIColor.blackColor()
         cell.populate(movies[indexPath.row])
         // Configure the cell
-        return cell
+        return cell as UICollectionViewCell
+    }
+    
+    func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
+        print("shoud select")
+        return true
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("moviesList2player", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "moviesList2player" {
+            let indexPaths  = collectionView.indexPathsForSelectedItems()
+            let indexPath   = indexPaths![0] as NSIndexPath
+            let player      = segue.destinationViewController as! VideoPlayerViewController
+            player.movie    = movies[indexPath.row]
+        }
     }
 }

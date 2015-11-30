@@ -11,8 +11,8 @@ import UIKit
 class MovieCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var title: UILabel!
-    var movie               : Movie = Movie(origJson: [])
-    let noimage                     = UIImage(named: "noimage.jpg")
+    var movie               : Movie         = Movie(origJson: [])
+    let noimage                             = UIImage(named: "noimage")
     
     func populate(movie : Movie) {
         title.text = movie.title

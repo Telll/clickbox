@@ -127,14 +127,14 @@
                                     <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="movie" id="fJQ-pg-hRC" customClass="MovieCollectionViewCell" customModule="TelllClient" customModuleProvider="target">
+                                    <collectionViewCell clipsSubviews="YES" contentMode="center" reuseIdentifier="movie" id="fJQ-pg-hRC" customClass="MovieCollectionViewCell" customModule="TelllClient" customModuleProvider="target">
                                         <rect key="frame" x="10" y="74" width="170" height="154"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="154"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EA4-u5-OSl">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="EA4-u5-OSl">
                                                     <rect key="frame" x="0.0" y="0.0" width="173" height="134"/>
                                                     <animations/>
                                                 </imageView>
@@ -192,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="2042" y="201"/>
         </scene>
-        <!--View Controller-->
+        <!--Video Player View Controller-->
         <scene sceneID="GHB-M1-AVI">
             <objects>
-                <viewController id="SEF-EU-3Xf" sceneMemberID="viewController">
+                <viewController id="SEF-EU-3Xf" customClass="VideoPlayerViewController" customModule="TelllClient" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6V9-o0-Ybt"/>
                         <viewControllerLayoutGuide type="bottom" id="2Pl-gu-eDi"/>
@@ -232,6 +232,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="noimage.jpg" width="275" height="275"/>
+        <image name="noimage" width="275" height="275"/>
     </resources>
 </document>
