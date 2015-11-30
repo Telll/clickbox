@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B9EE3F6776D884BE881E161B6A7D7C49D345DFAD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "13F8335C5E21A19C432D8A509F3A4FAD4A5BE7C1" : 0,
+    "C9664F1CA31EB425E186A6624E2E5B5EFA52F74A" : 0,
+    "B9EE3F6776D884BE881E161B6A7D7C49D345DFAD" : 0,
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "27552F4F-0D65-4072-A6BD-042041AD2013",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "13F8335C5E21A19C432D8A509F3A4FAD4A5BE7C1" : "TelllClient\/SwiftCommandWS\/SwiftEventEmitter\/",
+    "C9664F1CA31EB425E186A6624E2E5B5EFA52F74A" : "TelllClient\/SwiftCommandWS\/",
+    "B9EE3F6776D884BE881E161B6A7D7C49D345DFAD" : "TelllClient\/",
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "TelllClient\/SwiftCommandWS\/CryptoSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TelllClient",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TelllClient.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FCO\/SwiftEventEmitter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "13F8335C5E21A19C432D8A509F3A4FAD4A5BE7C1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Telll\/mobile-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B9EE3F6776D884BE881E161B6A7D7C49D345DFAD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/krzyzanowskim\/CryptoSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/FCO\/SwiftCommandWS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C9664F1CA31EB425E186A6624E2E5B5EFA52F74A"
+    }
+  ]
+}
