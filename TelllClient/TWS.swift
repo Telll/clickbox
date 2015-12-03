@@ -69,10 +69,11 @@ class TWS : EventEmitter {
     }
     
     func movies() {
-        let json : JSON = jsonBase
         if movies_cache != nil {
             emit("movies_ok", data: movies_cache!)
         } else {
+            var json : JSON = jsonBase
+            json["rows"].int = 999
             cws.run("movies", data: json) {cmd in
                 if cmd["type"] != "ERROR" {
                     self.movies_cache = [Movie]()
