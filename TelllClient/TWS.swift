@@ -28,6 +28,7 @@ class TWS : EventEmitter {
             return base
         }
     }
+    var photolinks : [Photolink] = []
     
     init(url : NSURL = NSURL(string: "ws://52.3.72.192:3000/ws")!) {
         self.url = url
@@ -35,6 +36,14 @@ class TWS : EventEmitter {
         super.init()
         cws.on("open") {
             self.emit("connect")
+        }
+        self.on("login") {
+            let json : JSON = self.jsonBase
+            print("running photolink")
+            self.cws.run("photolink", data: json) {cmd in
+                print("photolink \(cmd.data)")
+                self.photolinks.append(Photolink(origJson: cmd.data!))
+            }
         }
     }
     
@@ -48,6 +57,7 @@ class TWS : EventEmitter {
             if let auth_key = cmd.data!["auth_key"].string {
                 self.auth_key = auth_key
                 self.emit("login_ok", data: auth_key)
+                self.emit("login")
             } else {
                 self.emit("login_error")
             }
@@ -73,7 +83,7 @@ class TWS : EventEmitter {
             emit("movies_ok", data: movies_cache!)
         } else {
             var json : JSON = jsonBase
-            json["rows"].int = 999
+            json["rows"].int = 999  // GAMBI
             cws.run("movies", data: json) {cmd in
                 if cmd["type"] != "ERROR" {
                     self.movies_cache = [Movie]()

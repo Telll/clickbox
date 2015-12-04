@@ -27,6 +27,7 @@
 		ED60921D1C0A46F70068AABD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60921C1C0A46F70068AABD /* Extensions.swift */; };
 		ED6092211C0A52C70068AABD /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092201C0A52C70068AABD /* MovieCollectionViewCell.swift */; };
 		ED60922D1C0A91360068AABD /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED60922C1C0A91360068AABD /* VideoPlayerViewController.swift */; };
+		ED6092361C0FE2DD0068AABD /* Photolink.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6092351C0FE2DD0068AABD /* Photolink.swift */; };
 		EDF12B8A1BFEC00800C8CFAC /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; };
 		EDF12B8B1BFEC00800C8CFAC /* CryptoSwift.framework in Copy Framework */ = {isa = PBXBuildFile; fileRef = EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EDF12B8C1BFEC01100C8CFAC /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */; };
@@ -116,6 +117,7 @@
 		ED60921C1C0A46F70068AABD /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED6092201C0A52C70068AABD /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		ED60922C1C0A91360068AABD /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoPlayerViewController.swift; path = ../VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		ED6092351C0FE2DD0068AABD /* Photolink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photolink.swift; sourceTree = "<group>"; };
 		EDF12B841BFEBFFF00C8CFAC /* EventEmitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EventEmitter.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/EventEmitter.framework"; sourceTree = "<absolute>"; };
 		EDF12B891BFEC00800C8CFAC /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CryptoSwift.framework; path = "/Users/fernando/Library/Developer/Xcode/DerivedData/TelllClient-fwvyyxsxsgueeecmvmidcwbahnpo/Build/Products/Debug-iphoneos/CryptoSwift.framework"; sourceTree = "<absolute>"; };
 		EDF12B8E1BFEC2CF00C8CFAC /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = SwiftCommandWS/Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				ED4DC9A41BFC10F2006B3B69 /* AppDelegate.swift */,
 				ED6092141C06A42B0068AABD /* Movie.swift */,
 				ED6092121C0540560068AABD /* TWS.swift */,
+				ED6092351C0FE2DD0068AABD /* Photolink.swift */,
 				ED6092181C07D11A0068AABD /* TWSViewBase.swift */,
 				ED4DC9A61BFC10F2006B3B69 /* LoginViewController.swift */,
 				ED6092161C07D05F0068AABD /* MoviesViewController.swift */,
@@ -387,6 +390,7 @@
 				ED4DC9A71BFC10F2006B3B69 /* LoginViewController.swift in Sources */,
 				ED4DC9A51BFC10F2006B3B69 /* AppDelegate.swift in Sources */,
 				ED6092131C0540570068AABD /* TWS.swift in Sources */,
+				ED6092361C0FE2DD0068AABD /* Photolink.swift in Sources */,
 				ED4DC9AD1BFC10F2006B3B69 /* TelllClient.xcdatamodeld in Sources */,
 				ED6092151C06A42B0068AABD /* Movie.swift in Sources */,
 				ED6092211C0A52C70068AABD /* MovieCollectionViewCell.swift in Sources */,
